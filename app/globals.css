@@ -1,8 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Nunito:wght@300;400;500;600;700;800&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-saffron: #E8930A;
+  --color-saffron-light: #F5A82B;
+  --color-saffron-dark: #C47A08;
+
+  --color-mahogany: #2E1503;
+  --color-mahogany-light: #4A2308;
+
+  --color-cream: #FDF6EC;
+  --color-cream-dark: #F5E8D0;
+
+  --color-forest: #2D6A4F;
+  --color-forest-light: #3D8B6A;
+  --color-forest-dark: #1E4D38;
+
+  --color-warmgray: #7A6652;
+  --color-warmgray-light: #A08B73;
+  --color-warmgray-dark: #5C4D3C;
+
+  --font-playfair: var(--font-playfair), Georgia, serif;
+  --font-nunito: var(--font-nunito), system-ui, sans-serif;
+
+  --background-image-grain: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+  }
+  @keyframes pulse_glow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(232, 147, 10, 0.4); }
+    50% { box-shadow: 0 0 0 12px rgba(232, 147, 10, 0); }
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes steam1 {
+    0% { opacity: 0; transform: translateY(0) scaleX(1); }
+    40% { opacity: 0.7; }
+    80% { opacity: 0; }
+    100% { opacity: 0; transform: translateY(-30px) scaleX(1.5); }
+  }
+  @keyframes steam2 {
+    0% { opacity: 0; transform: translateY(0) scaleX(1); }
+    40% { opacity: 0.5; }
+    80% { opacity: 0; }
+    100% { opacity: 0; transform: translateY(-25px) scaleX(1.3); }
+  }
+
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-pulse_glow: pulse_glow 2s ease-in-out infinite;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-steam1: steam1 2s ease-in-out infinite;
+  --animate-steam2: steam2 2.5s ease-in-out infinite 0.5s;
+}
+
+
+
+
 
 @layer base {
   html {

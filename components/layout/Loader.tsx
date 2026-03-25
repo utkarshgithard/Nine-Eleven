@@ -21,7 +21,7 @@ export default function Loader() {
           className="fixed inset-0 z-[999] flex flex-col items-center justify-center bg-cream"
           initial={{ y: 0 }}
           exit={{ y: '-100%' }}
-          transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
+          transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] as const }}
           aria-label="Loading nine2Eleven"
           role="status"
         >
