@@ -80,10 +80,9 @@ export default function Hero() {
               animate="visible"
               className="font-playfair text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-mahogany leading-[1.1] mb-6"
             >
-              Food That Feels{' '}
-              <span className="text-gradient-saffron italic">Like Home,</span>
+              Best Hostel Mess & <span className="text-gradient-saffron italic">Canteen management</span>
               <br />
-              Every Single Day
+              in Danapur, Patna
             </motion.h1>
 
             {/* Subheading */}
@@ -94,8 +93,8 @@ export default function Hero() {
               animate="visible"
               className="font-nunito text-lg text-warmgray leading-relaxed mb-8 max-w-xl"
             >
-              From daily mess meals to grand event catering — nine2Eleven is your one-stop
-              destination for freshly made, wholesome food that brings people together.
+              From daily hostel mess meals to professional canteen management, rustic Dhaba dining, and food manpower solutions — nine2Eleven is your one-stop
+              destination for wholesome food in Danapur, Patna.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -189,7 +188,6 @@ export default function Hero() {
                   width={400}
                   height={300}
                   className="object-cover w-full h-40 xl:h-44"
-                  unoptimized
                 />
               </motion.div>
             ))}

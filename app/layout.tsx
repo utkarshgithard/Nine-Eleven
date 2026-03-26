@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Loader from "@/components/layout/Loader";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import JsonLd from "@/components/seo/JsonLd";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -22,16 +23,20 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "nine2Eleven — Every Meal, Every Moment",
+  title: "nine2Eleven — Best Hostel Mess & Canteen in Danapur, Patna",
   description:
-    "nine2Eleven offers premium food services including Mess Facility, Canteen, Restaurant, and Catering & Events. Get in touch to customize your plan.",
+    "nine2Eleven offers premium food services including Mess Facility, Canteen management, Dhaba, Food Manpower, and Event Catering in Danapur, Patna. Wholesome home-style meals for all.",
   keywords:
-    "mess facility, canteen services, catering events, restaurant, food service, nine2eleven",
+    "best hostel mess service in Danapur, canteen management Patna, professional catering Bihar, nine2eleven food services, restaurant Danapur Patna, hostel food subscriptions",
   openGraph: {
-    title: "nine2Eleven — Every Meal, Every Moment",
+    title: "nine2Eleven — Every Meal, Every Moment | Danapur, Patna",
     description:
-      "Premium food services — Mess, Canteen, Restaurant, and Catering under one roof.",
+      "Premium food services — Mess, Canteen, Dhaba, Food Manpower, and Catering in Danapur, Patna. Wholesome home-cooked meals every day.",
     type: "website",
+    locale: "en_IN",
+  },
+  alternates: {
+    canonical: "https://nine2eleven.in",
   },
 };
 
@@ -46,6 +51,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${nunito.variable} h-full`}
     >
       <body className="min-h-full bg-cream text-mahogany font-nunito antialiased">
+        <JsonLd />
         <Loader />
         <Navbar />
         <main>{children}</main>

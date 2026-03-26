@@ -32,6 +32,20 @@ const services = [
       'Large-scale catering for weddings, corporate events, and social gatherings. Let us handle the feast while you celebrate.',
     color: 'from-warmgray/10 to-warmgray/5',
   },
+  {
+    icon: '🍲',
+    title: 'Dhaba',
+    description:
+      'Authentic roadside culinary experience with robust flavors and traditional cooking styles. Hearty, rustic, and delicious.',
+    color: 'from-mahogany/10 to-mahogany/5',
+  },
+  {
+    icon: '👨‍🍳',
+    title: 'Food Manpower',
+    description:
+      'Professional kitchen staff and management services for institutions and corporate kitchens. Expert chefs at your disposal.',
+    color: 'from-forest/10 to-forest/5',
+  },
 ];
 
 const containerVariants: Variants = {
@@ -74,14 +88,14 @@ export default function Services() {
             What We Offer
           </h2>
           <p className="font-nunito text-warmgray mt-4 max-w-xl mx-auto text-base leading-relaxed">
-            Four distinct food services, one trusted brand. Whatever your need, nine2Eleven has you covered.
+            Six distinct food services, one trusted brand. Serving the best hostel mess and canteen management in Danapur, Patna.
           </p>
         </motion.div>
 
         {/* Cards grid */}
         <motion.div
           ref={ref}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}

@@ -197,6 +197,17 @@ export default function Contact() {
                     <p className="font-nunito text-warmgray">Open 9 AM – 11 PM, All Days</p>
                   </div>
                 </div>
+
+                {/* Address */}
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-saffron/10 flex items-center justify-center shrink-0">
+                    <span className="text-xl">📍</span>
+                  </div>
+                  <div>
+                    <p className="font-nunito font-700 text-mahogany">Our Location</p>
+                    <p className="font-nunito text-warmgray">Danapur, Patna, Bihar, India</p>
+                  </div>
+                </div>
               </div>
             </div>
 

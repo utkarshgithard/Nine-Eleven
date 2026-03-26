@@ -5,6 +5,8 @@ const services = [
   'Mess Facility',
   'Canteen Services',
   'Restaurant Dining',
+  'Dhaba Experience',
+  'Food Manpower',
   'Catering & Events',
 ];
 
