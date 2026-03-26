@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Phone } from 'lucide-react';
 
 const quickLinks = ['Home', 'Services', 'Menu', 'About', 'Contact'];
 const services = [
@@ -98,10 +99,19 @@ export default function Footer() {
           <div>
             <h3 className="font-playfair font-bold text-cream text-lg mb-5">Contact Info</h3>
             <ul className="space-y-4 font-nunito text-sm text-cream/70" role="list">
-              <li className="flex items-start gap-2">
-                <span className="text-saffron text-base mt-0.5" aria-hidden="true">📞</span>
-                <a href="tel:+919876543210" className="hover:text-saffron transition-colors focus:outline-none focus:ring-2 focus:ring-saffron/50 rounded-sm">
-                  +91 98765 43210
+              <li className="flex flex-col gap-3">
+                <div className="flex items-start gap-2">
+                  <span className="text-saffron text-base mt-0.5" aria-hidden="true">📞</span>
+                  <a href="tel:+919876543210" className="hover:text-saffron transition-colors focus:outline-none focus:ring-2 focus:ring-saffron/50 rounded-sm">
+                    +91 98765 43210
+                  </a>
+                </div>
+                <a
+                  href="tel:+919876543210"
+                  className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-saffron text-white font-nunito font-700 text-xs rounded-full shadow-md hover:bg-saffron-dark transition-all duration-200 w-fit"
+                >
+                  <Phone className="w-3 h-3" />
+                  Call Now
                 </a>
               </li>
               <li className="flex items-start gap-2">

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Phone } from 'lucide-react';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -68,14 +69,15 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-3">
             <a
-              href="#contact"
-              className="inline-flex items-center px-5 py-2.5 bg-saffron text-white font-nunito font-700 text-sm rounded-full shadow-md hover:bg-saffron-dark hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-saffron focus:ring-offset-2 active:scale-95"
-              aria-label="Contact us"
+              href="tel:+919876543210"
+              className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-saffron text-saffron font-nunito font-700 text-sm rounded-full hover:bg-saffron hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-saffron focus:ring-offset-2 active:scale-95"
+              aria-label="Call nine2Eleven"
             >
-              Contact Us
+              <Phone className="w-4 h-4" />
+              Call Now
             </a>
           </div>
 
@@ -157,11 +159,12 @@ export default function Navbar() {
 
               <div className="mt-8">
                 <a
-                  href="#contact"
-                  className="block text-center px-5 py-3 bg-saffron text-white font-nunito font-700 text-sm rounded-full shadow-md hover:bg-saffron-dark transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-saffron"
+                  href="tel:+919876543210"
+                  className="flex items-center justify-center gap-2 px-5 py-3 border-2 border-saffron text-saffron font-nunito font-700 text-sm rounded-full hover:bg-saffron hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-saffron"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Contact Us
+                  <Phone className="w-4 h-4" />
+                  Call Now
                 </a>
               </div>
 

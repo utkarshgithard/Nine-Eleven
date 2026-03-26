@@ -26,6 +26,31 @@
 
   --background-image-grain: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 
+  /* Shadcn Variables mapped to project theme */
+  --color-border: var(--color-cream-dark);
+  --color-input: var(--color-cream-dark);
+  --color-ring: var(--color-saffron);
+  --color-background: var(--color-cream);
+  --color-foreground: var(--color-mahogany);
+  --color-primary: var(--color-saffron);
+  --color-primary-foreground: white;
+  --color-secondary: var(--color-mahogany);
+  --color-secondary-foreground: var(--color-cream);
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: white;
+  --color-muted: var(--color-cream-dark);
+  --color-muted-foreground: var(--color-warmgray);
+  --color-accent: var(--color-saffron-light);
+  --color-accent-foreground: white;
+  --color-popover: var(--color-cream);
+  --color-popover-foreground: var(--color-mahogany);
+  --color-card: var(--color-cream);
+  --color-card-foreground: var(--color-mahogany);
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(var(--radius-lg) - 2px);
+  --radius-sm: calc(var(--radius-lg) - 4px);
+
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-12px); }
