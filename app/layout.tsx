@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     "nine2Eleven offers premium food services including Mess Facility, Canteen, Restaurant, and Catering & Events. Get in touch to customize your plan.",
   keywords:
     "mess facility, canteen services, catering events, restaurant, food service, nine2eleven",
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.svg",
+  },
   openGraph: {
     title: "nine2Eleven — Every Meal, Every Moment",
     description:
