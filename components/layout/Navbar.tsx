@@ -32,8 +32,8 @@ export default function Navbar() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-            ? 'bg-cream/80 backdrop-blur-md shadow-md border-b border-cream-dark/50'
-            : 'bg-transparent'
+          ? 'bg-cream/80 backdrop-blur-md shadow-md border-b border-cream-dark/50'
+          : 'bg-transparent'
           }`}
         role="banner"
       >
@@ -71,7 +71,7 @@ export default function Navbar() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+9182523532820"
+              href="tel:+918252353282"
               className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-saffron text-saffron font-nunito font-700 text-sm rounded-full hover:bg-saffron hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-saffron focus:ring-offset-2 active:scale-95"
               aria-label="Call nine2Eleven"
             >
@@ -158,7 +158,7 @@ export default function Navbar() {
 
               <div className="mt-8">
                 <a
-                  href="tel:+9182523532820"
+                  href="tel:+918252353282"
                   className="flex items-center justify-center gap-2 px-5 py-3 border-2 border-saffron text-saffron font-nunito font-700 text-sm rounded-full hover:bg-saffron hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-saffron"
                   onClick={() => setMenuOpen(false)}
                 >
