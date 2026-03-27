@@ -48,7 +48,7 @@ export default function Footer() {
               </a>
               {/* WhatsApp */}
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/9182523532820"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-cream/10 flex items-center justify-center text-saffron hover:bg-saffron hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-saffron"
@@ -102,12 +102,12 @@ export default function Footer() {
               <li className="flex flex-col gap-3">
                 <div className="flex items-start gap-2">
                   <span className="text-saffron text-base mt-0.5" aria-hidden="true">📞</span>
-                  <a href="tel:+919876543210" className="hover:text-saffron transition-colors focus:outline-none focus:ring-2 focus:ring-saffron/50 rounded-sm">
-                    +91 98765 43210
+                  <a href="tel:+9182523532820" className="hover:text-saffron transition-colors focus:outline-none focus:ring-2 focus:ring-saffron/50 rounded-sm">
+                    +91 82523 53282
                   </a>
                 </div>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+9182523532820"
                   className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-saffron text-white font-nunito font-700 text-xs rounded-full shadow-md hover:bg-saffron-dark transition-all duration-200 w-fit"
                 >
                   <Phone className="w-3 h-3" />

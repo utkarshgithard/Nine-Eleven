@@ -117,7 +117,7 @@ export default function Contact() {
                       id="phone"
                       name="phone"
                       required
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 82523 53282"
                       className="w-full px-4 py-3 rounded-xl border border-cream-dark bg-cream/30 font-nunito text-mahogany placeholder:text-warmgray/50 input-saffron-focus"
                     />
                   </div>
@@ -200,7 +200,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-nunito font-700 text-mahogany">Phone Number</p>
-                    <a href="tel:+919876543210" className="font-nunito text-warmgray hover:text-saffron transition-colors">+91 98765 43210</a>
+                    <a href="tel:+918252353282" className="font-nunito text-warmgray hover:text-saffron transition-colors">+91 82523 53282</a>
                   </div>
                 </div>
 
@@ -230,7 +230,7 @@ export default function Contact() {
 
             <Card className="p-8 bg-forest/5 border-forest/20 !shadow-none ring-1 ring-forest/10" hover={false}>
               <div className="flex flex-col items-center text-center space-y-4">
-                <motion.div 
+                <motion.div
                   className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#25D366] to-[#128C7E] flex items-center justify-center shadow-xl shadow-forest/20 relative group overflow-hidden"
                   whileHover={{ y: -5, scale: 1.05, rotate: -2 }}
                 >
@@ -246,7 +246,7 @@ export default function Contact() {
                 </p>
                 <Button
                   variant="green"
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/918252353282"
                   className="w-full sm:w-auto shadow-lg shadow-forest/20"
                   ariaLabel="Open WhatsApp chat"
                 >
@@ -260,37 +260,37 @@ export default function Contact() {
               <p className="font-nunito font-700 text-mahogany mb-4">Follow us on Social Media</p>
               <div className="flex gap-5">
                 {[
-                  { 
-                    name: 'Instagram', 
+                  {
+                    name: 'Instagram',
                     icon: (props: any) => (
                       <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                         <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                       </svg>
-                    ), 
-                    color: 'from-[#f09433] via-[#dc2743] to-[#bc1888]', 
-                    shadow: 'shadow-pink-500/30' 
+                    ),
+                    color: 'from-[#f09433] via-[#dc2743] to-[#bc1888]',
+                    shadow: 'shadow-pink-500/30'
                   },
-                  { 
-                    name: 'Facebook', 
+                  {
+                    name: 'Facebook',
                     icon: (props: any) => (
                       <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                       </svg>
-                    ), 
-                    color: 'from-[#1877F2] to-[#0D59B3]', 
-                    shadow: 'shadow-blue-600/30' 
+                    ),
+                    color: 'from-[#1877F2] to-[#0D59B3]',
+                    shadow: 'shadow-blue-600/30'
                   },
-                  { 
-                    name: 'Twitter', 
+                  {
+                    name: 'Twitter',
                     icon: (props: any) => (
                       <svg {...props} viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
                       </svg>
-                    ), 
-                    color: 'from-[#000000] to-[#333333]', 
-                    shadow: 'shadow-black/30' 
+                    ),
+                    color: 'from-[#000000] to-[#333333]',
+                    shadow: 'shadow-black/30'
                   }
                 ].map((social) => (
                   <motion.a
